@@ -1,6 +1,6 @@
 <?php
 
-namespace Melon;
+namespace Melon\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

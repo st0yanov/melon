@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Melon\User::class,
+            'model' => Melon\Models\User::class,
         ],
 
         // 'users' => [

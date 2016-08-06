@@ -2,7 +2,7 @@
 
 namespace Melon\Http\Controllers\Auth;
 
-use Melon\User;
+use Melon\Models\User;
 use Validator;
 use Melon\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;

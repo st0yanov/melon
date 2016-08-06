@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a067de8b8dceafbcf446accb5367b1dd",
-    "content-hash": "21fc83a893efe553948eb8d0fb05a9f1",
+    "hash": "daec3063382040547b56c1a9bfa9b346",
+    "content-hash": "7c48d86d17e2b8ae01fe764fb0442a52",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -214,6 +214,62 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "igaster/laravel-theme",
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igaster/laravel-theme.git",
+                "reference": "d1b504b80e45a9fb40dffa1ae3d34ea364691da1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igaster/laravel-theme/zipball/d1b504b80e45a9fb40dffa1ae3d34ea364691da1",
+                "reference": "d1b504b80e45a9fb40dffa1ae3d34ea364691da1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/database": "~5.2",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~4.0",
+                "vlucas/phpdotenv": "~2.0"
+            },
+            "suggest": {
+                "orchestra/asset": "Use '@css' and '@js' in Blade files"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "igaster\\laravelTheme\\": "src/",
+                    "igaster\\laravelTheme\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Giannis Gasteratos",
+                    "email": "igasteratos@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Themes: Asset & Views folder per theme. Theme inheritance. Blade integration and more...",
+            "homepage": "https://github.com/igaster/laravel-theme",
+            "keywords": [
+                "assets",
+                "blade",
+                "laravel-5",
+                "package",
+                "themes",
+                "views"
+            ],
+            "time": "2016-06-04 07:19:01"
         },
         {
             "name": "infyomlabs/core-templates",
@@ -632,33 +688,40 @@
             "time": "2016-07-20 13:13:06"
         },
         {
-            "name": "laravelcollective/html",
-            "version": "v5.2.4",
+            "name": "laravie/html",
+            "version": "v5.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "3a312d39ffe37da0f57b602618b61fd07c1fcec5"
+                "url": "https://github.com/laravie/html.git",
+                "reference": "c8bf73855fd52f6dd8a8bfccb2aaa4d05b0f7767"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/3a312d39ffe37da0f57b602618b61fd07c1fcec5",
-                "reference": "3a312d39ffe37da0f57b602618b61fd07c1fcec5",
+                "url": "https://api.github.com/repos/laravie/html/zipball/c8bf73855fd52f6dd8a8bfccb2aaa4d05b0f7767",
+                "reference": "c8bf73855fd52f6dd8a8bfccb2aaa4d05b0f7767",
                 "shasum": ""
             },
             "require": {
-                "illuminate/http": "5.2.*",
-                "illuminate/routing": "5.2.*",
-                "illuminate/session": "5.2.*",
-                "illuminate/support": "5.2.*",
-                "illuminate/view": "5.2.*",
+                "illuminate/http": "~5.2.0",
+                "illuminate/routing": "~5.2.0",
+                "illuminate/session": "~5.2.0",
+                "illuminate/support": "~5.2.0",
                 "php": ">=5.5.9"
             },
+            "replace": {
+                "laravelcollective/html": "*"
+            },
             "require-dev": {
-                "illuminate/database": "5.2.*",
-                "mockery/mockery": "~0.9",
+                "illuminate/database": "~5.2.0",
+                "mockery/mockery": "^0.9.1",
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.3-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Collective\\Html\\": "src/"
@@ -677,13 +740,22 @@
                     "email": "taylorotwell@gmail.com"
                 },
                 {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com"
+                },
+                {
                     "name": "Adam Engebretson",
                     "email": "adam@laravelcollective.com"
                 }
             ],
             "description": "HTML and Form Builders for the Laravel Framework",
-            "homepage": "http://laravelcollective.com",
-            "time": "2016-01-27 22:29:54"
+            "homepage": "https://github.com/laravie/html",
+            "keywords": [
+                "form",
+                "html",
+                "laravel"
+            ],
+            "time": "2016-06-21 14:17:53"
         },
         {
             "name": "league/flysystem",
@@ -1048,6 +1120,169 @@
                 "php"
             ],
             "time": "2016-04-19 13:41:41"
+        },
+        {
+            "name": "orchestra/asset",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/asset.git",
+                "reference": "f078a42a09ea8472f6ca497431fc77735f318289"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/asset/zipball/f078a42a09ea8472f6ca497431fc77735f318289",
+                "reference": "f078a42a09ea8472f6ca497431fc77735f318289",
+                "shasum": ""
+            },
+            "require": {
+                "laravie/html": "~5.2.0",
+                "orchestra/contracts": "~3.2.0",
+                "orchestra/support-facades": "~3.2.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "illuminate/filesystem": "~5.2.0",
+                "mockery/mockery": "0.9.*"
+            },
+            "suggest": {
+                "illuminate/filesystem": "Allow using orchestra/asset component outside of Laravel app (~5.2).",
+                "laravel/framework": "Allow using orchestra/asset component outside of Orchestra Platform (~5.2).",
+                "orchestra/foundation": "Allow using orchestra/asset with Orchestra Platform (~3.2).",
+                "orchestra/html": "Allow using orchestra/asset with HTML component (~3.2)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Asset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Asset Component for Orchestra Platform",
+            "homepage": "http://orchestraplatform.com/docs/latest/components/asset/",
+            "keywords": [
+                "asset",
+                "laravel",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2016-01-19 23:02:09"
+        },
+        {
+            "name": "orchestra/contracts",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/contracts.git",
+                "reference": "a158292622e1d754bb705d6aee920b90703ed032"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/contracts/zipball/a158292622e1d754bb705d6aee920b90703ed032",
+                "reference": "a158292622e1d754bb705d6aee920b90703ed032",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.2.0",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Contracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Contracts for Orchestra Platform",
+            "keywords": [
+                "contracts",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2015-12-26 13:35:24"
+        },
+        {
+            "name": "orchestra/support-facades",
+            "version": "v3.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/support-facades.git",
+                "reference": "52b07499e675a890db69c9557d1b04d989abc47b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/support-facades/zipball/52b07499e675a890db69c9557d1b04d989abc47b",
+                "reference": "52b07499e675a890db69c9557d1b04d989abc47b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.2.0",
+                "php": ">=5.5.0"
+            },
+            "suggest": {
+                "laravel/framework": "Allow using orchestra/support component outside of Orchestra Platform (~5.2).",
+                "orchestra/foundation": "Allow using orchestra/support with Orchestra Platform (~3.2)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Support\\Facades\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Support (Facades) Component for Orchestra Platform",
+            "homepage": "http://orchestraplatform.com/docs/latest/components/support/",
+            "keywords": [
+                "laravel",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2015-12-20 15:34:59"
         },
         {
             "name": "paragonie/random_compat",

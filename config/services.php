@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Melon\User::class,
+        'model' => Melon\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
