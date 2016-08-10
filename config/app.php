@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Sofia',
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'bg',
 
     /*
     |--------------------------------------------------------------------------
@@ -165,6 +165,9 @@ return [
         // Laravel Theme
         igaster\laravelTheme\themeServiceProvider::class,
 
+        // Entrust (Permissions and Role Management)
+        Zizaco\Entrust\EntrustServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -228,6 +231,8 @@ return [
         // Laravel Theme
         'Theme' => igaster\laravelTheme\Facades\Theme::class,
 
+        // Entrust
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 

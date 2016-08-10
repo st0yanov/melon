@@ -14,7 +14,8 @@
         "barryvdh/laravel-debugbar": "^2.2",
         "pda/pheanstalk": "^3.1",
         "igaster/laravel-theme": "^1.1",
-        "orchestra/asset": "^3.2"
+        "orchestra/asset": "^3.2",
+        "zizaco/entrust": "5.2.x-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
