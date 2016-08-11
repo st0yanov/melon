@@ -2,95 +2,95 @@
 
 return [
 
-	/*
-	|--------------------------------------------------------------------------
-	| Switch this package on/off. Usefull for testing...
-	|--------------------------------------------------------------------------
-	*/
+    /*
+    |--------------------------------------------------------------------------
+    | Switch this package on/off. Usefull for testing...
+    |--------------------------------------------------------------------------
+    */
 
-	'enabled' => true,
+    'enabled' => true,
 
     /*
     |--------------------------------------------------------------------------
     | File path where themes will be located.
     | Can be outside default views path EG: resources/themes
-    | Leave it null if you place your themes in the default views folder 
+    | Leave it null if you place your themes in the default views folder
     | (as defined in config\views.php)
     |--------------------------------------------------------------------------
     */
 
     'themes_path' => null, // eg: realpath(base_path('resources/themes'))
 
-	/*
-	|--------------------------------------------------------------------------
-	| Set behavior if an asset is not found in a Theme hierarcy.
-	| Available options: THROW_EXCEPTION | LOG_ERROR | ASSUME_EXISTS | IGNORE
-	|--------------------------------------------------------------------------
-	*/
+    /*
+    |--------------------------------------------------------------------------
+    | Set behavior if an asset is not found in a Theme hierarcy.
+    | Available options: THROW_EXCEPTION | LOG_ERROR | ASSUME_EXISTS | IGNORE
+    |--------------------------------------------------------------------------
+    */
 
-	'asset_not_found' => 'LOG_ERROR',
+    'asset_not_found' => 'LOG_ERROR',
 
-	/*
-	|--------------------------------------------------------------------------
-	| Set the Active Theme. Can be set at runtime with:
-	|  Themes::set('theme-name');
-	|--------------------------------------------------------------------------
-	*/
+    /*
+    |--------------------------------------------------------------------------
+    | Set the Active Theme. Can be set at runtime with:
+    |  Themes::set('theme-name');
+    |--------------------------------------------------------------------------
+    */
 
-	'active' => 'personal',
+    'active' => 'personal',
 
-	/*
-	|--------------------------------------------------------------------------
-	| Define available themes. Format:
-	|
-	| 	'theme-name' => [
-	| 		'extends'	 	=> 'theme-to-extend',  // optional
-	| 		'views-path' 	=> 'path-to-views',    // defaults to: resources/views/theme-name
-	| 		'asset-path' 	=> 'path-to-assets',   // defaults to: public/theme-name
-	|
-	|		// you can add your own custom keys and retrieve them with Theme::config('key');
-	| 		'key' 			=> 'value', 
-	| 	],
-	|
-	|--------------------------------------------------------------------------
-	*/
+    /*
+    |--------------------------------------------------------------------------
+    | Define available themes. Format:
+    |
+    | 	'theme-name' => [
+    | 		'extends'	 	=> 'theme-to-extend',  // optional
+    | 		'views-path' 	=> 'path-to-views',    // defaults to: resources/views/theme-name
+    | 		'asset-path' 	=> 'path-to-assets',   // defaults to: public/theme-name
+    |
+    |		// you can add your own custom keys and retrieve them with Theme::config('key');
+    | 		'key' 			=> 'value',
+    | 	],
+    |
+    |--------------------------------------------------------------------------
+    */
 
-	'themes' => [
+    'themes' => [
 
-		'default' => [
-			'extends'	 	=> null,
-			'views-path' 	=> '',
-			'asset-path' 	=> '',
-		],
+        'default' => [
+            'extends' => null,
+            'views-path' => '',
+            'asset-path' => '',
+        ],
 
-		'personal' => [
-			'views-path'	=> 'personal',
-			'asset-path'	=> 'personal'
-		]
+        'personal' => [
+            'views-path' => 'personal',
+            'asset-path' => 'personal',
+        ],
 
-		// Add your themes here...
+        // Add your themes here...
 
-		/*--------------[ Example Structre ]-------------
+        /*--------------[ Example Structre ]-------------
 
-			// Recomended (all defaults) : Assets -> \public\BasicTheme , Views -> \resources\views\BasicTheme
+            // Recomended (all defaults) : Assets -> \public\BasicTheme , Views -> \resources\views\BasicTheme
 
-			'BasicTheme',
-
-
-			// This theme shares the views with BasicTheme but defines its own assets in \public\SomeTheme
-
-			'SomeTheme' => [
-				'views-path'	=> 'BasicTheme',
-			],
+            'BasicTheme',
 
 
-			// This theme extends BasicTheme and ovverides SOME views\assets in its folders
+            // This theme shares the views with BasicTheme but defines its own assets in \public\SomeTheme
 
-			'AnotherTheme' => [
-				'extends'	=> 'BasicTheme',
-			],
+            'SomeTheme' => [
+                'views-path'	=> 'BasicTheme',
+            ],
 
-		------------------------------------------------*/
-	],
+
+            // This theme extends BasicTheme and ovverides SOME views\assets in its folders
+
+            'AnotherTheme' => [
+                'extends'	=> 'BasicTheme',
+            ],
+
+        ------------------------------------------------*/
+    ],
 
 ];

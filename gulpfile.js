@@ -11,6 +11,16 @@ var elixir = require('laravel-elixir');
  |
  */
 
+const THEME_NAME = 'personal';
+
 elixir(function(mix) {
     mix.sass('app.scss');
+});
+
+elixir(function(mix) {
+    mix.browserify('main.js', 'public/' + THEME_NAME + '/js/bundle.js', 'resources/assets/' + THEME_NAME + '/js');
+});
+
+elixir(function(mix) {
+    mix.copy('resources/assets/' + THEME_NAME + '/semantic', 'public/' + THEME_NAME + '/semantic');
 });

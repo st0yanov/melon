@@ -8,14 +8,12 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "predis/predis": "^1.1",
-        "infyomlabs/laravel-generator": "dev-master",
-        "laravelcollective/html": "5.2.*",
-        "infyomlabs/core-templates": "dev-master",
         "barryvdh/laravel-debugbar": "^2.2",
         "pda/pheanstalk": "^3.1",
         "igaster/laravel-theme": "^1.1",
         "orchestra/asset": "^3.2",
-        "zizaco/entrust": "5.2.x-dev"
+        "zizaco/entrust": "5.2.x-dev",
+        "orchestra/support": "^3.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

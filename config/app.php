@@ -158,6 +158,10 @@ return [
         // Laravel Theme
         igaster\laravelTheme\themeServiceProvider::class,
 
+        // Orchestra Asset
+        Orchestra\Asset\AssetServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+
         // Entrust (Permissions and Role Management)
         Zizaco\Entrust\EntrustServiceProvider::class,
 
@@ -222,6 +226,9 @@ return [
 
         // Laravel Theme
         'Theme' => igaster\laravelTheme\Facades\Theme::class,
+
+        // Orchestra Asset
+        'Asset' => Orchestra\Support\Facades\Asset::class,
 
         // Entrust
         'Entrust' => Zizaco\Entrust\EntrustFacade::class,
