@@ -19,8 +19,8 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::group(['namespace' => 'Manage', 'prefix' => 'manage', 'middleware' => ['auth', 'role:owner|admin']], function() {
-	Route::get('/', function() {
-		return 'Test access';
-	});
+Route::group(['namespace' => 'Manage', 'prefix' => 'manage', 'middleware' => ['auth', 'role:owner|admin']], function () {
+    Route::get('/', function () {
+        return 'Test access';
+    });
 });
