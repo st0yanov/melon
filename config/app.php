@@ -152,13 +152,6 @@ return [
          * Third-party Service Providers
          */
 
-        // InfyOm
-        Collective\Html\HtmlServiceProvider::class,
-        Laracasts\Flash\FlashServiceProvider::class,
-        Prettus\Repository\Providers\RepositoryServiceProvider::class,
-        \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
-        \InfyOm\CoreTemplates\CoreTemplatesServiceProvider::class,
-
         // Debugbar
         Barryvdh\Debugbar\ServiceProvider::class,
 
@@ -167,7 +160,6 @@ return [
 
         // Entrust (Permissions and Role Management)
         Zizaco\Entrust\EntrustServiceProvider::class,
-
 
         /*
          * Application Service Providers...
@@ -222,9 +214,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Form'      => Collective\Html\FormFacade::class,
-        'Html'      => Collective\Html\HtmlFacade::class,
-        'Flash'     => Laracasts\Flash\Flash::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Flash' => Laracasts\Flash\Flash::class,
 
         // Third-party Facades
 
@@ -232,7 +224,7 @@ return [
         'Theme' => igaster\laravelTheme\Facades\Theme::class,
 
         // Entrust
-        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Entrust' => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 
