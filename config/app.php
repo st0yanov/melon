@@ -165,6 +165,12 @@ return [
         // Entrust (Permissions and Role Management)
         Zizaco\Entrust\EntrustServiceProvider::class,
 
+        // Laravel Glide
+        Spatie\Glide\GlideServiceProvider::class,
+
+        // Laravel Langman,
+        Themsaid\Langman\LangmanServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -232,6 +238,9 @@ return [
 
         // Entrust
         'Entrust' => Zizaco\Entrust\EntrustFacade::class,
+
+        // Laravel Glide
+        'GlideImage' => Spatie\Glide\GlideImageFacade::class,
 
     ],
 

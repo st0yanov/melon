@@ -19,6 +19,14 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::group(['namespace' => 'Manage', 'prefix' => 'manage', 'middleware' => ['auth', 'role:owner|admin']], function () {
-    Route::get('/', 'HomeController@index');
-});
+Route::group(
+    [
+        'namespace' => 'Manage',
+        'prefix' => 'manage',
+        'as' => 'manage::',
+        'middleware' => ['auth', 'role:owner|admin'],
+    ],
+    function () {
+        Route::get('/', 'HomeController@index')->name('dashboard');
+    }
+);
