@@ -5,4 +5,7 @@ return [
     'menu' => [
         'dashboard' => 'Dashboard',
     ],
+    'home' => [
+        'title' => 'Dashboard',
+    ],
 ];

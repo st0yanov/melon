@@ -1,3 +1,4 @@
+var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 
 /*
@@ -13,14 +14,17 @@ var elixir = require('laravel-elixir');
 
 const THEME_NAME = 'personal';
 
+elixir.config.assetsPath = 'resources/assets/' + THEME_NAME;
+elixir.config.publicPath = 'public/' + THEME_NAME;
+
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('manage.scss');
 });
 
 elixir(function(mix) {
-    mix.browserify('main.js', 'public/' + THEME_NAME + '/js/bundle.js', 'resources/assets/' + THEME_NAME + '/js');
+    mix.browserify('main.js', elixir.config.publicPath + '/js/bundle.js');
 });
 
 elixir(function(mix) {
-    mix.copy('resources/assets/' + THEME_NAME + '/semantic', 'public/' + THEME_NAME + '/semantic');
+    mix.copy(elixir.config.assetsPath + '/semantic', elixir.config.publicPath + '/semantic');
 });

@@ -1,0 +1,1 @@
+{"version":3,"sources":["manage.scss"],"names":[],"mappings":"AAAA;EACI,0BAA0B,EAC7B;;AAED;EACI,gBAAgB,EACnB","file":"manage.css","sourcesContent":["body {\n    background-color: #ffffff;\n}\n\n.main.container {\n    margin-top: 7em;\n}"],"sourceRoot":"/source/"}

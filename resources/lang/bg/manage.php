@@ -5,4 +5,7 @@ return [
     'menu' => [
         'dashboard' => 'Табло',
     ],
+    'home' => [
+        'title' => 'Табло',
+    ],
 ];
