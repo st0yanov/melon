@@ -13,13 +13,13 @@ class RolesSeeder extends Seeder
         $roles = [
             [
                 'name' => 'owner',
-                'display_name' => 'Owner',
-                'description' => 'Has all permissions on the website.',
+                'display_name' => 'roles.owner.display_name',
+                'description' => 'roles.owner.description',
             ],
             [
                 'name' => 'admin',
-                'display_name' => 'Admin',
-                'description' => 'Has most of the permissions on the website except some business related ones.',
+                'display_name' => 'roles.admin.display_name',
+                'description' => 'roles.admin.description',
             ],
         ];
 

@@ -12,14 +12,29 @@ class PermissionsSeeder extends Seeder
     {
         $permissions = [
             [
-                'name' => 'create-post',
-                'display_name' => 'Create Posts',
-                'description' => 'Create new blog posts.',
+                'name' => 'article.manage',
+                'display_name' => 'permissions.article.manage.display_name',
+                'description' => 'permissions.article.manage.description',
             ],
             [
-                'name' => 'edit-user',
-                'display_name' => 'Edit Users',
-                'description' => 'Edit existing users.',
+                'name' => 'article.show',
+                'display_name' => 'permissions.article.show.display_name',
+                'description' => 'permissions.article.show.description',
+            ],
+            [
+                'name' => 'article.create',
+                'display_name' => 'permissions.article.create.display_name',
+                'description' => 'permissions.article.create.description',
+            ],
+            [
+                'name' => 'article.edit',
+                'display_name' => 'permissions.article.edit.display_name',
+                'description' => 'permissions.article.edit.description',
+            ],
+            [
+                'name' => 'article.delete',
+                'display_name' => 'permissions.article.delete.display_name',
+                'description' => 'permissions.article.delete.description',
             ],
         ];
 
