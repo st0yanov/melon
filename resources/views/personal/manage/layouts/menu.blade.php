@@ -5,6 +5,6 @@
       {{ trans('global.website_name') }}
     </a>
     <a href="{{ route('manage::dashboard') }}" class="item">{{ trans('manage.menu.dashboard') }}</a>
-
+    <a href="{{ route('manage::manage.article.index') }}" class="item">{{ trans('manage.menu.articles') }}</a>
   </div>
 </div>

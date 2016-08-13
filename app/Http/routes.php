@@ -28,5 +28,6 @@ Route::group(
     ],
     function () {
         Route::get('/', 'HomeController@index')->name('dashboard');
+        Route::resource('article', 'ArticleController');
     }
 );
