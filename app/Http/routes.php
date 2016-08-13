@@ -53,3 +53,7 @@ Route::group(
         Route::resource('article', 'ArticleController');
     }
 );
+
+Route::get('/c3/{extra}', function () {
+    require base_path('c3.php');
+})->where('extra', '.*');

@@ -19,3 +19,13 @@ modules:
             user: ''
             password: ''
             dump: tests/_data/dump.sql
+
+coverage:
+    enabled: true
+    remote: true
+    include:
+        - app/Http/Controllers/*
+        - app/Models/*
+    exclude:
+        - app/Http/Controllers/Controller.php
+        - app/Http/Controllers/Auth/*

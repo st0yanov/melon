@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1471125825">
+  <project timestamp="1471125825">
+    <package name="Melon\Http\Controllers">
+      <file name="/home/veskoy/Work/melon/app/Http/Controllers/HomeController.php">
+        <class name="HomeController" namespace="Melon\Http\Controllers">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="__construct" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="25" type="method" name="index" crap="2" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <metrics loc="29" ncloc="19" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Melon\Http\Controllers\Manage">
+      <file name="/home/veskoy/Work/melon/app/Http/Controllers/Manage/ArticleController.php">
+        <class name="ArticleController" namespace="Melon\Http\Controllers\Manage">
+          <metrics methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="0" elements="33" coveredelements="0"/>
+        </class>
+        <line num="10" type="method" name="__construct" crap="2" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="20" type="method" name="index" crap="2" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="30" type="method" name="create" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="42" type="method" name="store" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="54" type="method" name="show" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="66" type="method" name="edit" crap="2" count="0"/>
+        <line num="67" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="79" type="method" name="update" crap="2" count="0"/>
+        <line num="80" type="stmt" count="0"/>
+        <line num="82" type="stmt" count="0"/>
+        <line num="91" type="method" name="destroy" crap="2" count="0"/>
+        <line num="92" type="stmt" count="0"/>
+        <line num="94" type="stmt" count="0"/>
+        <line num="96" type="method" name="setupPermissions" crap="2" count="0"/>
+        <line num="97" type="stmt" count="0"/>
+        <line num="98" type="stmt" count="0"/>
+        <line num="99" type="stmt" count="0"/>
+        <line num="100" type="stmt" count="0"/>
+        <line num="101" type="stmt" count="0"/>
+        <line num="102" type="stmt" count="0"/>
+        <metrics loc="103" ncloc="45" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="0" elements="33" coveredelements="0"/>
+      </file>
+      <file name="/home/veskoy/Work/melon/app/Http/Controllers/Manage/HomeController.php">
+        <class name="HomeController" namespace="Melon\Http\Controllers\Manage">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="9" type="method" name="index" crap="1" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <metrics loc="13" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="Melon\Models">
+      <file name="/home/veskoy/Work/melon/app/Models/Permission.php">
+        <class name="Permission" namespace="Melon\Models">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/veskoy/Work/melon/app/Models/Role.php">
+        <class name="Role" namespace="Melon\Models">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/veskoy/Work/melon/app/Models/User.php">
+        <class name="User" namespace="Melon\Models">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="29" ncloc="19" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="6" loc="190" ncloc="112" classes="6" methods="12" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="1" elements="43" coveredelements="2"/>
+  </project>
+</coverage>
