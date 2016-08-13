@@ -5,6 +5,9 @@
       {{ trans('global.website_name') }}
     </a>
     <a href="{{ route('manage::dashboard') }}" class="item">{{ trans('manage.menu.dashboard') }}</a>
-    <a href="{{ route('manage::manage.article.index') }}" class="item">{{ trans('manage.menu.articles') }}</a>
+
+    @permission(['article.show', 'article.manage'])
+        <a href="{{ route('manage::manage.article.index') }}" class="item">{{ trans('manage.menu.articles') }}</a>
+    @endpermission
   </div>
 </div>

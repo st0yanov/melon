@@ -15,10 +15,32 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::auth();
-
 Route::get('/home', 'HomeController@index');
 
+// Authentication Group
+Route::group(
+    [
+        'namespace' => 'Auth',
+        'as' => 'auth::',
+    ],
+    function () {
+        // Authentication Routes...
+        Route::get('/login', 'AuthController@showLoginForm')->name('login');
+        Route::post('/login', 'AuthController@login');
+        Route::get('/logout', 'AuthController@logout')->name('logout');
+
+        // Registration Routes...
+        Route::get('register', 'AuthController@showRegistrationForm')->name('register');
+        Route::post('register', 'AuthController@register');
+
+        // Password Reset Routes...
+        Route::get('password/reset/{token?}', 'PasswordController@showResetForm')->name('password.reset');
+        Route::post('password/email', 'PasswordController@sendResetLinkEmail');
+        Route::post('password/reset', 'PasswordController@reset');
+    }
+);
+
+// Manage Group
 Route::group(
     [
         'namespace' => 'Manage',
