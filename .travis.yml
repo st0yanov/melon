@@ -6,16 +6,20 @@ php:
   - hhvm
   - nightly
 
-script: ./vendor/bin/codecept run --steps
-
-after_script:
-  - ./vendor/bin/codecept run --coverage --coverage-xml
-  - cp ./tests/_output/coverage.xml ./build/logs/clover.xml
-  - CODECLIMATE_REPO_TOKEN=fe64765bcebee13fbce237489d281ada4285bdcca8aed6daa7bbd3a7e3a2cc98 ./vendor/bin/test-reporter
-
 install:
   - composer install
 
 addons:
   hosts:
     - testing.melon.io
+
+script: ./vendor/bin/codecept run --steps
+after_script:
+  - ./vendor/bin/codecept run --coverage --coverage-xml
+  - cp ./tests/_output/coverage.xml ./build/logs/clover.xml
+  - ./vendor/bin/test-reporter
+
+branches:
+  only:
+    - master
+    - development
