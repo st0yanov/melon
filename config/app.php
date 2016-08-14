@@ -171,6 +171,9 @@ return [
         // Laravel Langman,
         Themsaid\Langman\LangmanServiceProvider::class,
 
+        // Laravel Sluggable
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
+
         /*
          * Application Service Providers...
          */

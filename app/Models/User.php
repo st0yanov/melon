@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the articles that have been created by the user.
+     */
+    public function articles()
+    {
+        return $this->hasMany('Melon\Models\Article');
+    }
 }

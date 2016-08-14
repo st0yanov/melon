@@ -54,6 +54,9 @@ Route::group(
     }
 );
 
-Route::get('/c3/{extra}', function () {
-    require base_path('c3.php');
-})->where('extra', '.*');
+// CodeCeption Coverage Tool - testing environment only
+if (env('APP_ENV') == 'testing') {
+    Route::get('/c3/{extra}', function () {
+        require base_path('c3.php');
+    })->where('extra', '.*');
+}
