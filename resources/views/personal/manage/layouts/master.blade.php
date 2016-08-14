@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>{{ trans('global.website_name') }} - {{ trans('manage.global_title') }} - @yield('title')</title>
+    <title>@lang('global.website_name') - @lang('manage.global_title') - @yield('title')</title>
 
     {!! Asset::styles() !!}
     {!! Asset::container('header-scripts')->scripts() !!}

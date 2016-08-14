@@ -10077,7 +10077,7 @@ return jQuery;
 },{}],2:[function(require,module,exports){
 'use strict';
 
-var $ = require('jquery');
+window.$ = window.jQuery = require('jquery');
 
 },{"jquery":1}]},{},[2]);
 

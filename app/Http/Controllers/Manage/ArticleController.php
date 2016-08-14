@@ -2,8 +2,9 @@
 
 namespace Melon\Http\Controllers\Manage;
 
-use Illuminate\Http\Request;
 use Melon\Http\Controllers\Controller;
+use Melon\Http\Requests\StoreArticleRequest;
+use Melon\Models\Article;
 
 class ArticleController extends Controller
 {
@@ -19,7 +20,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('manage.article.index');
+        $articles = Article::with('user')->orderBy('id', 'desc')->paginate(20);
+
+        return view('manage.article.index')->with('articles', $articles);
     }
 
     /**
@@ -39,7 +42,7 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreArticleRequest $request)
     {
         //
     }
@@ -76,7 +79,7 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreArticleRequest $request, $id)
     {
         //
     }

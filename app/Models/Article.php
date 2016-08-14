@@ -16,7 +16,7 @@ class Article extends Model
     use StateMutators;
 
     protected $fillable = ['title', 'content'];
-    protected $dates = ['deleted_at'];
+    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
     public $states = [
         'draft' => 0,
