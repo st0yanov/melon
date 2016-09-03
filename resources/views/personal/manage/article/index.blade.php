@@ -21,8 +21,8 @@
                 <td>{{ $article->user->name }}</td>
                 <td>{{ $article->updated_at->toDayDateTimeString() }}</td>
                 <td>
-                    {!! Form::open(['route' => ['manage::manage.article.destroy', $article], 'method' => 'delete']) !!}
-                    <a href="{{ route('manage::manage.article.show', $article) }}" class="ui yellow icon button"><i class="edit icon"></i></a>
+                    {!! Form::open(['route' => ['manage::article.destroy', $article], 'method' => 'delete']) !!}
+                    <a href="{{ route('manage::article.show', $article) }}" class="ui yellow icon button"><i class="edit icon"></i></a>
                     {!! Form::button('<i class="trash outline icon"></i>', ['class' => 'ui red icon button', 'type' => 'submit']) !!}
                     {!! Form::close() !!}
                 </td>

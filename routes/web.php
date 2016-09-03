@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
 |
 */
 
@@ -25,18 +25,19 @@ Route::group(
     ],
     function () {
         // Authentication Routes...
-        Route::get('/login', 'AuthController@showLoginForm')->name('login');
-        Route::post('/login', 'AuthController@login');
-        Route::get('/logout', 'AuthController@logout')->name('logout');
+        Route::get('/login', 'LoginController@showLoginForm')->name('login');
+        Route::post('/login', 'LoginController@login');
+        Route::post('/logout', 'LoginController@logout')->name('logout');
 
         // Registration Routes...
-        Route::get('register', 'AuthController@showRegistrationForm')->name('register');
-        Route::post('register', 'AuthController@register');
+        Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
+        Route::post('register', 'RegisterController@register');
 
         // Password Reset Routes...
-        Route::get('password/reset/{token?}', 'PasswordController@showResetForm')->name('password.reset');
-        Route::post('password/email', 'PasswordController@sendResetLinkEmail');
-        Route::post('password/reset', 'PasswordController@reset');
+        Route::get('password/reset', 'ForgotPasswordController@showLinkRequestForm')->name('password.reset');
+        Route::post('password/email', 'ForgotPasswordController@sendResetLinkEmail');
+        Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm');
+        Route::post('password/reset', 'ResetPasswordController@reset');
     }
 );
 

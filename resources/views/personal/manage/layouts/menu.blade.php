@@ -6,8 +6,10 @@
     </a>
     <a href="{{ route('manage::dashboard') }}" class="item">@lang('manage.menu.dashboard')</a>
 
-    @permission(['article.show', 'article.manage'])
-        <a href="{{ route('manage::manage.article.index') }}" class="item">@lang('manage.menu.articles')</a>
-    @endpermission
+    {{-- @permission(['article.show', 'article.manage']) --}}
+    @if(Entrust::can(['article.show', 'article.manage']))
+        <a href="{{ route('manage::article.index') }}" class="item">@lang('manage.menu.articles')</a>
+    @endif
+    {{-- @endpermission --}}
   </div>
 </div>

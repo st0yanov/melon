@@ -4,10 +4,12 @@ namespace Melon\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
     use EntrustUserTrait;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
